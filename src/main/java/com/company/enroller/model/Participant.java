@@ -1,6 +1,8 @@
 package com.company.enroller.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -12,7 +14,8 @@ public class Participant {
 
     @Id
     private String login;
-
+    
+    @JsonProperty(access = Access.WRITE_ONLY)
     @Column
     private String password;
 
