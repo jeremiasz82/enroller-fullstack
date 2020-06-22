@@ -25,6 +25,6 @@
             labelOfTheButton() {
                 return this.buttonLabel || 'Zaloguj się';
             }
-        }
+        },
     };
 </script>
